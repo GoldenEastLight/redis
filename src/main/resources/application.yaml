@@ -1,0 +1,4 @@
+spring:
+  redis:
+    host: "hostname"
+    port: 6379

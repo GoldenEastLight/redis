@@ -11,6 +11,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:wpring-boot-starter-data-redis'
     implementation 'org.codehaus.groovy:groovy-all:3.0.5'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
