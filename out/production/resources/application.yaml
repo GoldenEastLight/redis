@@ -1,0 +1,21 @@
+spring:
+  cache: redis
+  redis:
+    host: "hostname"
+    port: 6379
+
+datasource:
+  driverClassName: net.sf.log4.jdbc.sql.jdbcapi.DriverSpy
+  url: "jdbc:log4jdbc:mariadb://localhost:3306/redis"
+  username: root
+  password: admin
+
+jpa:
+  show-sql: true
+  hibernate:
+    ddl-auto: update
+    naming-strategy: org.hibernate.cfg.lmprovedNamingStrategy
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      format_sql: true
