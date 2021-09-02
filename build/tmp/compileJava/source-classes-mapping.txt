@@ -4,9 +4,17 @@ com/practice/redis/repository/UserRepositoryImpl.java
  com.practice.redis.repository.UserRepositoryImpl
 com/practice/redis/controller/UserController.java
  com.practice.redis.controller.UserController
+com/practice/redis/controller/PersonController.java
+ com.practice.redis.controller.PersonController
+com/practice/redis/repository/PersonRepository.java
+ com.practice.redis.repository.PersonRepository
 com/practice/redis/repository/UserRepository.java
  com.practice.redis.repository.UserRepository
 com/practice/redis/config/RedisConfig.java
  com.practice.redis.config.RedisConfig
 com/practice/redis/entity/User.java
  com.practice.redis.entity.User
+com/practice/redis/service/PersonService.java
+ com.practice.redis.service.PersonService
+com/practice/redis/entity/Person.java
+ com.practice.redis.entity.Person

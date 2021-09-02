@@ -29,6 +29,8 @@ dependencies {
     implementation 'org.mariadb.jdbc:mariadb-java-client'
     // mustache 사용을 위해 추가한다.
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
+    // https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1
+    implementation group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4.1', version: '1.16'
 
     // 단위 테스트를 위해 추가한다.
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -48,7 +50,7 @@ dependencies {
 
     testAnnotationProcessor 'org.projectlombok:lombok'
 
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 
 }
