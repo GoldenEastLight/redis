@@ -1,21 +1,21 @@
 spring:
   cache: redis
   redis:
-    host: "hostname"
+#    host: "hostname"
     port: 6379
-
-datasource:
-  driverClassName: net.sf.log4.jdbc.sql.jdbcapi.DriverSpy
-  url: "jdbc:log4jdbc:mariadb://localhost:3306/redis"
-  username: root
-  password: admin
-
-jpa:
-  show-sql: true
-  hibernate:
-    ddl-auto: update
-    naming-strategy: org.hibernate.cfg.lmprovedNamingStrategy
-  properties:
+#    password: "password"
+  datasource:
+    url: jdbc:mariadb://localhost:3306/avemaria?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: admin
+#   driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+  jpa:
+    show-sql: true
     hibernate:
-      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-      format_sql: true
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true

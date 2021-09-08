@@ -26,6 +26,8 @@ public class PersonController {
     private static final Logger log = LoggerFactory.getLogger(PersonController.class);
 
     @RequestMapping("/create")
+    @ResponseBody
+    @CachePut(value = "persons", key = "#firstName")
     public Person create(@RequestParam String firstName, @RequestParam String lastName, @RequestParam int age) {
         log.info("create method call");
         Person p = personService.create(firstName, lastName, age);

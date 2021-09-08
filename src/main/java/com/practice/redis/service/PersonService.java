@@ -3,10 +3,12 @@ package com.practice.redis.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.practice.redis.entity.Person;
 import com.practice.redis.repository.PersonRepository;
 
+@Service
 public class PersonService {
 
     @Autowired
